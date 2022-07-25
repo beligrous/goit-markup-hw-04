@@ -246,6 +246,21 @@ ul {
   margin-right: 30px;
 }
 
+.values .list::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.values .list:nth-child(1)::before {
+  background-image: url(../images/icons/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .values-title {
   font-size: 14px;
   line-height: calc(16 / 14);
