@@ -99,7 +99,25 @@ ul {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  display: block;
+  display: flex;
+}
+
+.icon-mail::before {
+  content: "";
+  align-self: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../images/icons/envelope.svg");
+}
+
+.icon-tel::before {
+  content: "";
+  align-self: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../images/icons/smartphone.svg");
 }
 
 .head-title:hover,
@@ -121,10 +139,20 @@ ul {
 
 /* Герой */
 
-.hero {
-  background: #2f303a;
+.hero > .container {
+  height: 600px;
+  max-width: 1600px;
+  background: #c4c4c4;
   padding: 200px 0;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/icons/Img-bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
