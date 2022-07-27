@@ -8,6 +8,7 @@
   --title-color: #212121;
   --main-text-color: #757575;
   --activ-text-color: #2196f3;
+  --icon-fill: #afb1b8;
 }
 
 body {
@@ -336,18 +337,17 @@ ul {
 }
 
 .member-icon {
-  fill: var(--main-text-color);
+  fill: var(--icon-fill);
 }
 
 .member-soc:hover,
 .member-soc:focus {
   background-color: var(--activ-text-color);
-  color: var(--activ-text-color);
 }
 
 .member-soc:hover > .member-icon,
 .member-soc:focus > .member-icon {
-  fill: white;
+  fill: #ffffff;
 }
 
 .member-connect {
@@ -365,12 +365,23 @@ ul {
   gap: 30px;
 }
 
+.client-icon {
+  fill: var(--icon-fill);
+}
+
 .client {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.client:hover > .client-icon,
+.client:focus > .client-icon {
+  fill: var(--activ-text-color);
 }
 
 .client:hover,
