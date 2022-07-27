@@ -67,11 +67,6 @@ ul {
   align-items: center;
 }
 
-.head-icon {
-  margin-right: 10px;
-  fill: var(--main-text-color);
-}
-
 .head .list:not(:last-child) {
   margin-right: 50px;
 }
@@ -112,6 +107,14 @@ ul {
   display: flex;
 }
 
+.head-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+}
+
 .head-title:hover,
 .head-title:focus,
 .head .tel-mail:hover,
@@ -119,6 +122,11 @@ ul {
 .foot-tel-mail:hover,
 .foot-tel-mail:focus {
   color: var(--activ-text-color);
+}
+
+.tel-mail:hover > .head-icon,
+.tel-mail:focus > .head-icon {
+  fill: var(--activ-text-color);
 }
 
 .head-list .link.current {
