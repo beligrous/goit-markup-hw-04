@@ -102,24 +102,6 @@ ul {
   display: flex;
 }
 
-.icon-mail::before {
-  content: "";
-  align-self: center;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url("../images/icons/envelope.svg");
-}
-
-.icon-tel::before {
-  content: "";
-  align-self: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url("../images/icons/smartphone.svg");
-}
-
 .head-title:hover,
 .head-title:focus,
 .head .tel-mail:hover,
@@ -253,30 +235,6 @@ ul {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.values .list:nth-child(1)::before {
-  background-image: url(../images/icons/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.values .list:nth-child(2)::before {
-  background-image: url(../images/icons/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.values .list:nth-child(3)::before {
-  background-image: url(../images/icons/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.values .list:nth-child(4)::before {
-  background-image: url(../images/icons/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .values-title {
