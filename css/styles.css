@@ -140,11 +140,12 @@ ul {
 
 /* Герой */
 
-.hero > .container {
+.hero {
   height: 600px;
   max-width: 1600px;
   background: #c4c4c4;
-  padding: 200px 0;
+  padding: 200px;
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -486,6 +487,7 @@ ul {
 
 .foot > .container {
   display: flex;
+  align-items: baseline;
 }
 
 .join {
